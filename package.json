@@ -1,0 +1,24 @@
+{
+  "name": "tor-control",
+  "version": "0.0.1",
+  "description": "A node library to communicate with tor-control",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atd-schubert/node-tor-control.git"
+  },
+  "keywords": [
+    "tor",
+    "tor-control",
+    "tcp"
+  ],
+  "author": "Arne Schubert <atd.schubert@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atd-schubert/node-tor-control/issues"
+  },
+  "homepage": "https://github.com/atd-schubert/node-tor-control#readme"
+}
