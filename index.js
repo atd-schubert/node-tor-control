@@ -58,7 +58,9 @@ var TorControl = function TorControl(opts) {
         
         //Handling connection errors
         this.connection.once('error', function(err){
-            cb(new Error("Error connecting to control port: " + err));
+            if (cb) {
+              cb(new Error("Error connecting to control port: " + err));
+            }
         });
         
 
