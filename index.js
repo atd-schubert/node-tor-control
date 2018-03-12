@@ -55,6 +55,14 @@ var TorControl = function TorControl(opts) {
         }
 
         this.connection = net.connect(params);
+        
+        //Handling connection errors
+        this.connection.once('error', function(err){
+            if (cb) {
+              cb(new Error("Error connecting to control port: " + err));
+            }
+        });
+        
 
         // piping events
         this.connection.on('data', function (data) {
