@@ -1,6 +1,6 @@
 {
   "name": "tor-control",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A node library to communicate with tor-control",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/atd-schubert/node-tor-control/issues"
   },
-  "homepage": "https://github.com/atd-schubert/node-tor-control#readme"
+  "homepage": "https://github.com/atd-schubert/node-tor-control#readme",
+  "devDependencies": {
+    "mocha": "^5.0.4"
+  }
 }
