@@ -142,7 +142,8 @@ TorControl.prototype = {
 
                             for (i = 0; i < arr.length; i += 1) {
                                 if (arr[i] !== '') {
-                                    messages.push(arr[i].substr(4));
+                                    var message = /^250./.test(arr[i]) ? arr[i].substr(4) : arr[i]
+                                    messages.push(message);
                                 }
                             }
                             return cb(null, {
